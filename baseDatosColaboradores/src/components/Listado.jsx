@@ -1,12 +1,12 @@
-import Table from "react-bootstrap/Table"; 
-import './Listado.css';
+import Table from "react-bootstrap/Table";
+import "./Listado.css";
 
 function Listado({ listaColaboradores }) {
   return (
-    <Table striped="columns">
+    <Table className="table-custom" striped bordered hover>
       <thead>
         <tr>
-          <th>#</th> 
+          <th>#</th>
           <th>Nombre </th>
           <th>Correo </th>
           <th>Edad </th>
@@ -17,7 +17,6 @@ function Listado({ listaColaboradores }) {
       <tbody>
         {listaColaboradores.map((colaborador) => (
           <tr key={colaborador.id}>
-
             <td>{colaborador.id}</td>
 
             <td> {colaborador.nombre} </td>

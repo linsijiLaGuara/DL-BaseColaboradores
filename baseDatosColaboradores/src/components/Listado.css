@@ -1,11 +1,23 @@
-table{
-  
-    border-spacing: 5px;
+.table-custom {
+    border-collapse: collapse;
+    width: 100%;
 }
-tbody {
-    border: 2px;
-}
-tr{
-    border-color: blueviolet;
 
+.table-custom th,
+.table-custom td {
+    border: 1px solid #1e051d;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-custom th {
+    background-color: #24021c;
+}
+
+table-custom tr:nth-child(even) {
+    background-color: #ab36a9;
+}
+
+.table-custom tr:hover {
+    background-color: #787878;
 }
