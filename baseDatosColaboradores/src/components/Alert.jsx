@@ -1,6 +1,6 @@
 import Alert from 'react-bootstrap/Alert';
 
-function BasicExample() {
+function Alerta() {
   return (
     <>
       {[
@@ -21,4 +21,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Alerta;
