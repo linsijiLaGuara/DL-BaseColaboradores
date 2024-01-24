@@ -1,27 +1,27 @@
 .form-regist {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
-  gap: 5px;
-  padding: 5px;
+  gap: 10px;
+  padding: 10px;
 }
 
 form {
-
-  width: 150px;
+ 
+  max-width: 400px;
   margin: auto;
-  padding: 6px;
+  padding: 10px;
 }
 
 .title-text {
-  font-size: 30px;
-  color: #c8c8c8;
+  font-size: 18px;
+  color: #f8f8f8;
 }
-
 
 input {
   padding: 12px;
-  border: 1px solid #370831;
+  border: 1px solid #50095a;
   border-radius: 5px;
   margin-bottom: 10px;
+  width: 100%; /
 }

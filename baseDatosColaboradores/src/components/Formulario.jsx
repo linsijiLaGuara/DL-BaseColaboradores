@@ -53,50 +53,52 @@ const Formulario = ({ onAlert, onAgregarColaborador }) => {
   };
 
   return (
-    <> <h1 className="title-text">Agregar un nuevo colaborador</h1>
-      <form onSubmit={handleSubmit}>
-       
-        <div className="form-regist">
-          <input
-            type="text"
-            name="nombre"
-            value={colaborador.nombre}
-            onChange={capturaInput}
-            placeholder="Nombre"
-          />
-          <input
-            type="text"
-            name="correo"
-            value={colaborador.correo}
-            onChange={capturaInput}
-            placeholder="Correo"
-          />
-          <input
-            type="text"
-            name="edad"
-            value={colaborador.edad}
-            onChange={capturaInput}
-            placeholder="Edad"
-          />
-          <input
-            type="text"
-            name="cargo"
-            value={colaborador.cargo}
-            onChange={capturaInput}
-            placeholder="Cargo"
-          />
-          <input
-            type="text"
-            name="telefono"
-            value={colaborador.telefono}
-            onChange={capturaInput}
-            placeholder="Teléfono"
-          />
-          <Button variant="success" type="submit" >
-            Agregar
-          </Button>
-        </div>
-      </form>
+    <>
+      <div className="card">
+        <form onSubmit={handleSubmit} className="form-regist">
+          <h1 className="title-text">Agregar colaborador</h1>
+          <div className="form-regist">
+            <input
+              type="text"
+              name="nombre"
+              value={colaborador.nombre}
+              onChange={capturaInput}
+              placeholder="Nombre"
+            />
+            <input
+              type="text"
+              name="correo"
+              value={colaborador.correo}
+              onChange={capturaInput}
+              placeholder="Correo"
+            />
+            <input
+              type="text"
+              name="edad"
+              value={colaborador.edad}
+              onChange={capturaInput}
+              placeholder="Edad"
+            />
+            <input
+              type="text"
+              name="cargo"
+              value={colaborador.cargo}
+              onChange={capturaInput}
+              placeholder="Cargo"
+            />
+            <input
+              type="text"
+              name="telefono"
+              value={colaborador.telefono}
+              onChange={capturaInput}
+              placeholder="Teléfono"
+            />
+            <Button variant="success" type="submit">
+              Agregar
+            </Button>
+          </div>
+        </form>
+      </div>
     </>
   );
 };

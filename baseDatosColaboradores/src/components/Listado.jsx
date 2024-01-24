@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Table from "react-bootstrap/Table";
 import "./Listado.css";
 
