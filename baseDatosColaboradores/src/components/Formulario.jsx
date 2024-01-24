@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./Formulario.css";
 import Button from "react-bootstrap/Button";
 
-const Formulario = ({ onAlert, onAgregarColaborador , mensaje, color }) => {
+const Formulario = ({ onAlert, onAgregarColaborador }) => {
   const [colaborador, setColaborador] = useState({
     nombre: "",
     correo: "",
@@ -22,9 +22,9 @@ const Formulario = ({ onAlert, onAgregarColaborador , mensaje, color }) => {
       colaborador.cargo === "" ||
       colaborador.telefono === ""
     ) {
-      onAlert("Debe completar todos los campos.");
+      onAlert("Debe completar todos los campos.", "danger"); // Pasar "danger" como color
     } else if (!validateCorreo(colaborador.correo)) {
-      onAlert("Ingrese un correo electrónico válido.");
+      onAlert("Ingrese un correo electrónico válido.", "danger"); // Pasar "danger" como color
     } else {
       onAgregarColaborador(colaborador);
 
@@ -37,10 +37,9 @@ const Formulario = ({ onAlert, onAgregarColaborador , mensaje, color }) => {
         telefono: "",
       });
 
-      onAlert("¡Se agregó un nuevo colaborador exitosamente!");
+      onAlert("¡Se agregó un nuevo colaborador exitosamente!", "success"); // Pasar "success" como color
     }
   };
-
   const validateCorreo = (correo) => {
     const expresionRegularCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return expresionRegularCorreo.test(correo);
