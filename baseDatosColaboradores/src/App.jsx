@@ -1,17 +1,16 @@
-import { useState } from 'react'
-import Formulario from './components/Formulario'
-import {BaseColaboradores} from './BaseColaborades'
-import './App.css'
+import { useState } from 'react';
+import Listado from './components/Listado';
+import { BaseColaboradores } from './BaseColaborades'
+import './App.css';
 
 function App() {
-  const [listaNombres, setListaNombres] = useState(BaseColaboradores)
+  const [listaNombres, setListaNombres] = useState(BaseColaboradores);
 
   return (
     <>
-   
-   <Formulario />
+      <Listado listaColaboradores={listaNombres} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
