@@ -1,17 +1,19 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import Alert from "react-bootstrap/Alert";
 
-
-const Alerta = ({message}) => {
+const Alerta = ({ mensaje, color }) => {
   return (
     <>
-      {message && (
-        <div className={message.includes("exitoso") ? "alert-success" : "alert-danger"}>
-          {message}
-        </div>
+      {mensaje && (
+        <Alert variant={color}>
+          {mensaje}
+        </Alert>
       )}
     </>
   );
 };
 
 export default Alerta;
+
+
