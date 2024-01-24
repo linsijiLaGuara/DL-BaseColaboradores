@@ -15,5 +15,3 @@ const Alerta = ({ mensaje, color }) => {
 };
 
 export default Alerta;
-
-
