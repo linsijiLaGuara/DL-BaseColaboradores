@@ -1,11 +1,11 @@
 .custom-alert {
-  /* Estilos generales para la alerta */
+border-color: blue;
 }
 
 .text-success {
-  color: green; /* Color verde para éxito */
+  color: green; 
 }
 
 .text-danger {
-  color: red; /* Color rojo para peligro */
+  color: red; 
 }

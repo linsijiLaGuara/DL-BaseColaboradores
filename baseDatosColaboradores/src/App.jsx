@@ -12,8 +12,6 @@ function App() {
 
   const agregarColaborador = (nuevoColaborador) => {
     setListaNombres([...listaNombres, { ...nuevoColaborador, id: listaNombres.length + 1 }]);
-    setMensaje("¡Se agregó un nuevo colaborador exitosamente!");
-    setColorAlerta(color);
   };
 
   const mostrarAlerta = (mensaje, color) => {
