@@ -1,11 +1,12 @@
 import Table from "react-bootstrap/Table"; 
+import './Listado.css';
 
 function Listado({ listaColaboradores }) {
   return (
-    <Table striped bordered hover>
+    <Table striped="columns">
       <thead>
         <tr>
-          <th>#</th>
+          <th>#</th> 
           <th>Nombre </th>
           <th>Correo </th>
           <th>Edad </th>

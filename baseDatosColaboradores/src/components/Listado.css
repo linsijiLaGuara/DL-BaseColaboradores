@@ -1,0 +1,11 @@
+table{
+  
+    border-spacing: 5px;
+}
+tbody {
+    border: 2px;
+}
+tr{
+    border-color: blueviolet;
+
+}
