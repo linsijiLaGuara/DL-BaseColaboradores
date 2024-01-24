@@ -1,0 +1,27 @@
+.form-regist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+form {
+
+  width: 300px; 
+  margin: 0 auto; 
+  padding: 10px; 
+}
+
+.title-text {
+  font-size: 30px;
+  color: #fff; 
+}
+
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
