@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./Formulario.css";
 import Button from "react-bootstrap/Button";
 
-const Formulario = ({ onAlert, onAgregarColaborador }) => {
+const Formulario = ({ onAlert, onAgregarColaborador , mensaje, color }) => {
   const [colaborador, setColaborador] = useState({
     nombre: "",
     correo: "",
@@ -92,7 +92,7 @@ const Formulario = ({ onAlert, onAgregarColaborador }) => {
             onChange={capturaInput}
             placeholder="Teléfono"
           />
-          <Button variant="success" type="submit">
+          <Button variant="success" type="submit" >
             Agregar colaborador
           </Button>
         </div>
