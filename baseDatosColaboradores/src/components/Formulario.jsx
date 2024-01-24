@@ -53,8 +53,9 @@ const Formulario = ({ onAlert, onAgregarColaborador }) => {
   };
 
   return (
-    <>
+    <> <h1 className="title-text">Agregar un nuevo colaborador</h1>
       <form onSubmit={handleSubmit}>
+       
         <div className="form-regist">
           <input
             type="text"
@@ -92,7 +93,7 @@ const Formulario = ({ onAlert, onAgregarColaborador }) => {
             placeholder="Teléfono"
           />
           <Button variant="success" type="submit" >
-            Agregar colaborador
+            Agregar
           </Button>
         </div>
       </form>

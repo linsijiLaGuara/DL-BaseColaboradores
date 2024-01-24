@@ -20,10 +20,12 @@ function App() {
   };
 
   return (
-    <>
+    <> <div className="orden">
       <Alerta mensaje={mensaje} color={colorAlerta} />
       <Formulario onAlert={mostrarAlerta} onAgregarColaborador={agregarColaborador} />
       <Listado listaColaboradores={listaNombres} />
+    </div>
+
     </>
   );
 }
