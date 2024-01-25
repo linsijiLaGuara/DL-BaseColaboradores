@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Listado from "./components/Listado";
 import Formulario from "./components/Formulario";
 import Alerta from "./components/Alert";
+import { Buscador } from "./components/Buscador";
 import { BaseColaboradores } from "./BaseColaborades";
 import "./App.css";
+
 
 function App() {
   const [listaNombres, setListaNombres] = useState(BaseColaboradores);
@@ -24,7 +26,8 @@ function App() {
 
   return (
     <>
-  
+
+      <Buscador />
       <div className="orden">
         <Formulario
           onAlert={mostrarAlerta}
