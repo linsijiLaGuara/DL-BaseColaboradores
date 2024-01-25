@@ -20,11 +20,6 @@ export const Buscador = ({ listaColaboradores, setListaColaboradores }) => {
                 user.telefono.toLowerCase().includes(valueToLowerCase)
             );
         });
-
-        // if (!dataFiltered.length) {
-        // setErrors('nO DATA fOUND');
-        // }
-
         handleFilterListaColaboradores(listaColaboradoresFiltered);
     };
 

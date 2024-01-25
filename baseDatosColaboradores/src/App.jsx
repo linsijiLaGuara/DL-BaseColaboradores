@@ -29,20 +29,24 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <Buscador
-        listaColaboradores={listaNombres}
-        setListaColaboradores={handleFilterListaColaboradores}
-      />
-      <div className="orden">
-        <Formulario
-          onAlert={mostrarAlerta}
-          onAgregarColaborador={agregarColaborador}
+    <>
+
+      <div className="app-container">
+        <h3 className='text-buscar'>Buscar colaborador</h3>
+        <Buscador
+          listaColaboradores={listaNombres}
+          setListaColaboradores={handleFilterListaColaboradores}
         />
-        <Listado listaColaboradores={listaNombres} />
-      </div>
-      <Alerta mensaje={mensaje} color={colorAlerta} />
-    </div>
+        <div className="orden">
+          <Formulario
+            onAlert={mostrarAlerta}
+            onAgregarColaborador={agregarColaborador}
+          />
+          <Listado listaColaboradores={listaNombres} />
+        </div>
+        <Alerta mensaje={mensaje} color={colorAlerta} />
+      </div></>
+
   );
 }
 
