@@ -24,10 +24,16 @@ function App() {
     setColorAlerta(color);
   };
 
-  return (
-    <>
+  const handleFilterListaColaboradores = (listaColaboradoresFiltered) => {
+    setListaNombres(listaColaboradoresFiltered);
+  };
 
-      <Buscador />
+  return (
+    <div className="app-container">
+      <Buscador
+        listaColaboradores={listaNombres}
+        setListaColaboradores={handleFilterListaColaboradores}
+      />
       <div className="orden">
         <Formulario
           onAlert={mostrarAlerta}
@@ -36,7 +42,7 @@ function App() {
         <Listado listaColaboradores={listaNombres} />
       </div>
       <Alerta mensaje={mensaje} color={colorAlerta} />
-    </>
+    </div>
   );
 }
 

@@ -5,11 +5,18 @@
   text-align: center;
 }
 
+.app-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
 .orden {
   display: flex;
-  align-items: center; 
-  justify-content: space-between; 
-  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 50px;
 }
 
 .card {

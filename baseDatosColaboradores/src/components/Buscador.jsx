@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const Buscador = ({ listaColaboradores, setListaColaboradores }) => {
     const handleFilterListaColaboradores = (listaColaboradoresFiltered) => {
-        setFilter(listaColaboradoresFiltered);
+        setListaColaboradores(listaColaboradoresFiltered);
     };
 
     const handleOnChange = (event) => {
