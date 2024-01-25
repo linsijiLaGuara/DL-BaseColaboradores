@@ -11,7 +11,10 @@ function App() {
   const [colorAlerta, setColorAlerta] = useState(null);
 
   const agregarColaborador = (nuevoColaborador) => {
-    setListaNombres([...listaNombres, { ...nuevoColaborador, id: listaNombres.length + 1 }]);
+    setListaNombres([
+      ...listaNombres,
+      { ...nuevoColaborador, id: listaNombres.length + 1 },
+    ]);
   };
 
   const mostrarAlerta = (mensaje, color) => {
@@ -20,12 +23,16 @@ function App() {
   };
 
   return (
-    <> <div className="orden">
+    <>
+  
+      <div className="orden">
+        <Formulario
+          onAlert={mostrarAlerta}
+          onAgregarColaborador={agregarColaborador}
+        />
+        <Listado listaColaboradores={listaNombres} />
+      </div>
       <Alerta mensaje={mensaje} color={colorAlerta} />
-      <Formulario onAlert={mostrarAlerta} onAgregarColaborador={agregarColaborador} />
-      <Listado listaColaboradores={listaNombres} />
-    </div>
-
     </>
   );
 }
